@@ -1,0 +1,125 @@
+# --- Environnements virtuels Python ---
+# Les noms les plus courants
+.venv/
+venv/
+ENV/
+env/
+# Parfois avec des suffixes
+env.bak/
+venv.bak/
+
+# --- Fichiers d'environnement et secrets ---
+# Ignorer tous les fichiers .env, .env.* SAUF .env.example (si vous en avez un)
+.env
+.env.*
+!*.env.example
+!*.env.sample
+
+# --- Fichiers de cache et compilés Python ---
+__pycache__/
+*.py[cod]  # Couvre *.pyc, *.pyo, *.pyd
+*$py.class # Pour Jython
+*.so       # Fichiers d'objets compilés (C extensions)
+
+# --- Dossiers de distribution/build Python ---
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Fichiers de logs ---
+*.log
+logs/
+# Si vous voulez ignorer les fichiers JSON par défaut mais garder certains:
+# *.json
+# !main_api_agent_batch_test_results.json # Exemple pour garder un fichier spécifique
+
+# --- Fichiers de configuration spécifiques à l'IDE ---
+# VS Code
+.vscode/*
+!.vscode/settings.json # Peut être utile de versionner les settings partagés
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Eclipse
+.project
+.pydevproject
+.settings/
+# Netbeans
+nbproject/
+
+# --- Fichiers spécifiques au système d'exploitation ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Spotlight
+.Spotlight-V100
+.Trashes
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Linux
+*~
+# KDE
+.directory
+
+# --- Fichiers de test et de couverture ---
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# --- Fichiers spécifiques à des outils Python ---
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# Ruff
+.ruff_cache/
+# Jupyter Notebook
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# --- Votre dossier spécifique Autogen ---
+coding/
+
+# --- Fichiers de base de données SQLite (si vous en utilisez localement pour des tests) ---
+*.sqlite3
+*.db3
+*.db
+
+# --- Autres ---
+# Fichiers de dépendances npm/yarn si vous aviez du front-end
+# node_modules/
+# package-lock.json
+# yarn.lock
